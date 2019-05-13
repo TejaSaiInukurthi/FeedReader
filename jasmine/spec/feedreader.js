@@ -65,7 +65,7 @@ $(function() {
      */
     it('menu element is visible when clicked', function() {
       $('.menu-icon-link').click();
-      expect($('body').hasClass('menu-hidden')).toBe(false);
+      expect($('body').hasClass('menu-hidden')).not.toBe(true);
       $('.menu-icon-link').click();
       expect($('body').hasClass('menu-hidden')).toBe(true);
 
